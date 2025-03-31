@@ -19,6 +19,10 @@
    --secondary-text-color: #b0b3b8;
 }
 
+body{
+    background-color: var(--main-bg-color);
+}
+
 .header{
     background-color: var(--header-bg-color) !important;
     color: var(--primary-text-color);
@@ -26,4 +30,14 @@
 
 #search{
     border: 1px solid var(--secondary-text-color);
+}
+
+.overcast{
+    border: 1px solid var(--border-color);
+    color: var(--primary-text-color);
+}
+
+.details{
+    color: var(--primary-text-color);
+    border: 1px solid var(--border-color);    
 }
