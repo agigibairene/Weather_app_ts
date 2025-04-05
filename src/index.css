@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,6 +23,7 @@
 
 body{
     background-color: var(--main-bg-color);
+    font-family: "Quicksand", sans-serif;
 }
 
 .header{
@@ -40,4 +43,22 @@ body{
 .details{
     color: var(--primary-text-color);
     border: 1px solid var(--border-color);    
+}
+
+.hour-card{
+    background: var(--main-bg-color);
+    border: 1px solid var(--border-color);   
+    color: var(--primary-text-color); 
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+}
+
+.hour-title{
+    color: var(--primary-text-color);
 }
