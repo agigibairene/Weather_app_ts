@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 export default function DailyCast(){
     const [hourlycast, setHourCast] = useState([]);
 
-const url = 'https://ai-weather-by-meteosource.p.rapidapi.com/daily?lat=37.81021&lon=-122.42282&language=en&units=auto';
+    const url = 'https://ai-weather-by-meteosource.p.rapidapi.com/daily?lat=37.81021&lon=-122.42282&language=en&units=auto';
     const options = {
         method: 'GET',
         headers: {
@@ -43,7 +43,7 @@ const url = 'https://ai-weather-by-meteosource.p.rapidapi.com/daily?lat=37.81021
                             month: '2-digit',
                         })
                         return <div key={wind}>
-                            <p className="text-center">{formatter.format(dateObj)}</p>
+                            <p className="text-center days">{formatter.format(dateObj)}</p>
                             <div className="flex rounded-lg items-center min-w-32 border p-4 hour-card flex-col">
                                 <img src={`/set01/small/${icon}.png`} alt="" />
                                 <p>{temperature}</p>
