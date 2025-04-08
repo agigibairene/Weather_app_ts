@@ -27,7 +27,6 @@ export default function Hourlycast(){
         fetchHourWeather()
     }, [])
 
-    console.log(hourlycast)
 
     return(
         <div className="w-4/5 mx-auto hour-cast flex flex-col gap-4 mb-8">
@@ -42,7 +41,7 @@ export default function Hourlycast(){
                             minute: 'numeric',
                             hour12: true,
                         }).format(dateObj);
-                        return <div className="flex rounded-lg items-center min-w-32 border p-4 hour-card flex-col">
+                        return <div  key={date} className="flex rounded-lg items-center min-w-32 border p-4 hour-card flex-col">
                             <p>{time}</p>
                             <img src={`/set01/small/${icon}.png`} alt="" />
                             <p>{temperature}</p>

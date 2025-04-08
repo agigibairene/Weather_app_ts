@@ -20,8 +20,6 @@ export default function CurrentWeather(){
         setWeatherData(data)
     }
 
-    console.log(weatherInfo)
-
     useEffect(()=>{
         fetchWeatherData()
     }, [])
